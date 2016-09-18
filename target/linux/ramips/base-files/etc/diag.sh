@@ -6,6 +6,9 @@
 
 get_status_led() {
 	case $(ramips_board_name) in
+	hg255d)
+		status_led="hg255d:power"
+		;;
 	3g-6200n)
 		status_led="edimax:green:power"
 		;;
